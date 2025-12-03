@@ -59,7 +59,7 @@ last_name.send_keys("Ocampo")
 
 # Email
 email = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "userEmail")))
-email.send_keys("alejoben200@gmail.com")
+email.send_keys("alejo2@gmail.com")
 
 # Género Male
 male_label = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "label[for='gender-radio-1']")))
@@ -128,4 +128,5 @@ close = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "
 scroll_and_click(close)
 
 time.sleep(3)
+
 driver.quit()
