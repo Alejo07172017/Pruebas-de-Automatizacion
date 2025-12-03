@@ -50,7 +50,7 @@ time.sleep(1)
 email = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "emailAddress")))
 driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", email)
 time.sleep(1)
-email.send_keys("alejoben200@gmail.com")
+email.send_keys("alejo2@gmail.com")
 
 time.sleep(1)
 
@@ -71,4 +71,5 @@ result = driver.find_element(By.ID, "results-section")
 driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", result)
 
 time.sleep(3)
+
 driver.quit()
